@@ -1,0 +1,26 @@
+[
+    {
+      "title": "My First Talk",
+      "date": "2018-08",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum repudiandae, autem eos voluptatum assumenda cum laborum iure nam in accusantium.",
+      "url": "/decks/talk1",
+      "thumbnailImage": "../images/talk.png"
+    },
+    {
+      "title": "My Second Talk",
+      "date": "2019-09",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum repudiandae, autem eos voluptatum assumenda cum laborum iure nam in accusantium.",
+      "url": "/decks/talk2",
+      "thumbnailImage": "../images/talk.png"
+    },
+    {
+      "title": "My Third Talk",
+      "date": "2020-09",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum repudiandae, autem eos voluptatum assumenda cum laborum iure nam in accusantium.",
+      "url": "/decks/talk3",
+      "thumbnailImage": "../images/talk.png"
+    }
+  ]

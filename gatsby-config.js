@@ -1,10 +1,35 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `一灯大师`,
+    description: `渔 樵 耕 读`,
+    author: `@Caesar`,
+    menuLinks:[
+       {
+         name:'首  页',
+         link:'/'
+        },
+       {
+         name:'关 于',
+         link:'/about'
+       },
+       {
+         name:'文 章',
+         link: '/posts'
+       },
+       {
+         name: '演 讲',
+         link: '/talks'
+        },
+        {
+          name: '联 系',
+          link: '/contact'
+        },
+      ],
   },
   plugins: [
+    `gatsby-plugin-mdx`,
+    `gatsby-plugin-lodash`,
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
@@ -14,6 +39,27 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-json`,
+          {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+              path: `${__dirname}/src/data`,
+            },
+          },
+          {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+              name: `pages`,
+              path: `${__dirname}/src/pages/`,
+            },
+          },
+          {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+              name: `posts`,
+              path: `${__dirname}/src/posts/`,
+            },
+          },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    a {
+        @apply text-red-900 hover:text-red-500;
+     }
+ 
+     ul, 
+     ol {
+         @apply list-square;
+     }
+}
