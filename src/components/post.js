@@ -9,11 +9,12 @@ import {AiOutlineTag} from "react-icons/ai"
 import {FiCalendar} from "react-icons/fi"
 
 const shortcodes = { Link } // Provide common components here
-const disqusConfig = {
-  shortname: process.env.GATSBY_DISQUS_NAME,
-  config: { identifier: `{mdx.frontmatter.title}`, },
-}
+
 export default function PageTemplate({ data: { mdx } }) {
+  const disqusConfig = {
+    shortname: `zhuganglie`,
+    config: { identifier: `{mdx.id}`, title: `{mdx.frontmatter.title}`, },
+  }
   return (
     <Layout>
     <div>
