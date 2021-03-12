@@ -17,7 +17,7 @@ const IndexPage =({data}) => {
       <ul className="list-none mt-2">
         {posts.map(({ node: post }) => (
           <li key={post.id} className="my-6">
-            <div className="flex flex-col md:flex-row items-start justify-between">
+            <div className="flex flex-col space-y-2 md:flex-row md:items-start md:justify-between">
             <div>
             <Link to={post.fields.slug}>
               <h3>{post.frontmatter.title}</h3>
@@ -28,7 +28,10 @@ const IndexPage =({data}) => {
         </span>
         </div>
         </div>
-        <div className="flex space-x-2 "> <FiCalendar size="18" color="" /> <span className="font-sans text-sm text-left">{post.frontmatter.date}</span></div>
+        <div className="flex space-x-2 "> 
+        <FiCalendar size="18" color="" /> 
+        <span className="font-sans text-sm text-left">{post.frontmatter.date}</span>
+        </div>
         </div>
           </li>
         ))}

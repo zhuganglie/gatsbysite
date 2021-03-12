@@ -28,10 +28,10 @@ const Layout = ({ children }) => {
   return (
     <>
     <div className="flex h-screen w-screen">
-      <div className={`md:flex ${showMenu ? "flex" : "hidden"} min-w-max border-r-4 border-red-900`} >
+      <div className={`md:flex ${showMenu ? "flex" : "hidden"} md:w-1/5 min-w-max border-r-4 border-red-900`} >
       <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata?.title || `Title`} />
       </div>
-      <div className="pl-4 pr-4 md:pr-24 py-8 w-full  overflow-auto">
+      <div className="px-4 md:pr-24 py-8 md:w-4/5 overflow-auto">
         <div className="h-12 mb-2 md:hidden">
         <button onClick={toggleMenu} className="px-3 py-1 my-auto font-bold font-sans text-yellow-50 hover:text-gray-900 bg-red-900 hover:bg-yellow-50 hover:border-red-900 flex items-center border-0 outline-none focus:outline-black"><RiMenuUnfoldLine size="20" />&nbsp; 渔樵耕读 </button>
         </div>

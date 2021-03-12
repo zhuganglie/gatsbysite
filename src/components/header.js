@@ -5,7 +5,7 @@ import {FaEnvelopeSquare, FaTwitterSquare, FaGithubSquare} from 'react-icons/fa'
 import { StaticImage } from "gatsby-plugin-image"
 
 const Header = ({ siteTitle, menuLinks }) => (
-  <header className="m-0 h-screen w-max max-w-xs">
+  <header className="h-screen w-max max-w-xs m-auto">
     <div className="text-center p-7 flex flex-col  space-y-12 items-baseline justify-center">
       <div>
         <div className="w-1/2 mx-auto">

@@ -18,7 +18,7 @@ export default function PageTemplate({ data: { mdx } }) {
   return (
     <Layout>
     <div>
-      <h2 className="mb-2">{mdx.frontmatter.title}</h2>
+      <h2 className="mb-4">{mdx.frontmatter.title}</h2>
       <div className="flex space-x-2">
       &nbsp; &nbsp; <FiCalendar size="18" color="black" /> <p className=" text-sm font-sans text-black"> {mdx.frontmatter.date}</p>
       </div>
