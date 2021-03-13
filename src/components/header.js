@@ -5,7 +5,7 @@ import {FaEnvelopeSquare, FaTwitterSquare, FaGithubSquare} from 'react-icons/fa'
 import { StaticImage } from "gatsby-plugin-image"
 
 const Header = ({ siteTitle, menuLinks }) => (
-  <header className="h-screen w-max max-w-xs m-auto">
+  <header className="h-screen w-max max-w-xs m-auto font-monospace">
     <div className="text-center p-7 flex flex-col  space-y-12 items-baseline justify-center">
       <div>
         <div className="w-1/2 mx-auto">
@@ -16,7 +16,7 @@ const Header = ({ siteTitle, menuLinks }) => (
           {siteTitle}
         </Link>  
       </h2>
-      <p className="text-sm text-black"><span className="border border-black rounded p-0.5">渔</span> <span className="border border-black rounded p-0.5">樵</span> <span className="border border-black rounded p-0.5">耕</span> <span className="border border-black rounded p-0.5">读</span></p>
+      <p className="flex space-x-2 items-center justify-center text-sm text-black"><span className="border border-black rounded p-0.5">渔</span> <span className="border border-black rounded p-0.5">樵</span> <span className="border border-black rounded p-0.5">耕</span> <span className="border border-black rounded p-0.5">读</span></p>
    </div>
       <nav className="m-auto">
       <ul className="flex flex-col flex-1 m-2 space-y-2">
@@ -29,7 +29,7 @@ const Header = ({ siteTitle, menuLinks }) => (
               ))}
             </ul>
       </nav>
-      <footer className="mt-8 text-sm">
+      <footer className="mt-8 text-sm mx-auto">
           &copy; {new Date().getFullYear()}
           {` `}
           <span>猪刚烈</span>
