@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://www.yqgd.tk`,
     title: `一灯大师`,
     description: `渔 樵 耕 读`,
     author: `@Caesar`,
@@ -27,6 +28,7 @@ module.exports = {
       ],
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-mdx`,
     `gatsby-plugin-lodash`,
     `gatsby-plugin-postcss`,
@@ -72,6 +74,17 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-1PT1YW053L", // Google Analytics / GA
+         // "AW-CONVERSION_ID", // Google Ads / Adwords / AW
+         // "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
+        ],
       },
     },
     `gatsby-plugin-gatsby-cloud`,
