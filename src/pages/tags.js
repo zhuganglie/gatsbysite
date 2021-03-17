@@ -18,6 +18,7 @@ const TagsPage = ({
     <Helmet title={title} />
     <div>
       <h2>所有标签</h2>
+      <hr />
       <ul>
         {group.map(tag => (
           <li key={tag.fieldValue}>
@@ -67,4 +68,3 @@ export const pageQuery = graphql`
     }
   }
 `
-

@@ -7,7 +7,7 @@ import { kebabCase } from "lodash"
 import { DiscussionEmbed } from "disqus-react"
 import {AiOutlineTag} from "react-icons/ai"
 import {FiCalendar} from "react-icons/fi"
-
+import {BiArrowBack} from "react-icons/bi"
 const shortcodes = { Link } // Provide common components here
 
 export default function PageTemplate({ data: { mdx } }) {
@@ -22,13 +22,24 @@ export default function PageTemplate({ data: { mdx } }) {
       <div className="flex space-x-2">
       &nbsp; &nbsp; <FiCalendar size="18" color="black" /> <p className=" text-sm font-sans text-black"> {mdx.frontmatter.date}</p>
       </div>
+      <hr />
       <MDXProvider components={shortcodes}>
         <MDXRenderer>{mdx.body}</MDXRenderer>
       </MDXProvider>
     </div>
-    <div className="mb-4 text-sm font-sans flex items-center space-x-2 ">
-        <span className="text-red-900 font-bold"><Link to="/tags">标签：</Link></span>
+    <div className="mb-4 text-sm md:flex md:justify-between md:items-center">
+    <div className="bg-yellow-100  w-max px-2 py-1 md:mb-3 flex items-center space-x-2 ">
+        <span className="font-bold"><Link to="/tags">标签：</Link></span>
          {mdx.frontmatter.tags.map(tag => (<Link to={`/tags/${kebabCase(tag)}/`} className="flex text-red-900 px-1"><AiOutlineTag size="18" color="#7F1D1D" />{tag}</Link>))}
+        </div>
+        <div className="bg-yellow-100 w-max px-2 py-1">
+        <Link to="/posts">
+        <a className="flex items-center space-x-2">
+        <BiArrowBack size="18" />
+        <span>返回</span>
+        </a>
+        </Link>
+        </div>
         </div>
         <DiscussionEmbed {...disqusConfig} />
     </Layout>

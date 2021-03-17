@@ -14,6 +14,7 @@ const IndexPage =({data}) => {
          <SEO title = "Posts" />
     <div>
       <h2>文 章</h2>
+      <hr />
       <ul className="list-none mt-2">
         {posts.map(({ node: post }) => (
           <li key={post.id} className="my-6">
@@ -28,8 +29,8 @@ const IndexPage =({data}) => {
         </span>
         </div>
         </div>
-        <div className="flex space-x-2 "> 
-        <FiCalendar size="18" color="" /> 
+        <div className="flex space-x-2 ">
+        <FiCalendar size="18" color="" />
         <span className="font-sans text-sm text-left">{post.frontmatter.date}</span>
         </div>
         </div>
