@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.yqgd.tk`,
-    title: `一 灯 大 师`,
-    description: `渔 樵 耕 读`,
+    title: `一灯大师`,
+    description: `渔樵耕读`,
     menuLinks:[
        {
          name:'首  页',

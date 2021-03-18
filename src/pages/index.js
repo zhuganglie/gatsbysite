@@ -18,25 +18,29 @@ const IndexPage = () => (
     <div className="text-center">
     <h3>渔樵耕读四首</h3>
     <p>[明] &middot; 任环</p>
-    <div className="md:flex text-center md:items-center md:justify-evenly md:space-x-4">
-    <div >
+    <div className="md:flex  justify-center items-center md:space-x-4">
+      <div className="lg:flex items-center lg:space-x-4">
+    <p className="">
     明月扁舟，芦花浅水。<br />
-    鱼无深愁，漫兴而已。 <br />
-    </div>
-    <div>
+    鱼无深愁，漫兴而已。
+    </p>
+    <p className="">
 云山砍破，挑此一肩。<br />
-留彼新松，以待参天。 <br />
+留彼新松，以待参天。
+</p>
 </div>
-<div>
+<div className="lg:flex items-center lg:space-x-4">
+<p className="">
 一犁春雨，万顷秋风。<br />
-击壤而歌，伊谁之功。<br />
-</div>
-<div>
+击壤而歌，伊谁之功。
+</p>
+<p className="">
 刺股悬梁，囊萤映雪。<br />
-达之思兼，穷亦归洁。 <br />
+达之思兼，穷亦归洁。
+</p>
 </div>
 </div>
-    </div>
+</div>
   </Layout>
 )
 

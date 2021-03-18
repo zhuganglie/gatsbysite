@@ -8,15 +8,15 @@ const Header = ({ siteTitle, menuLinks }) => (
   <header className="h-screen w-max max-w-xs m-auto font-monospace">
     <div className="text-center p-7 flex flex-col  space-y-12 items-baseline justify-center">
       <div>
-        <div className="w-1/2 mx-auto">
+        <div className="w-1/3 m-auto">
         <StaticImage src="../images/yideng.png" alt="avatar" width={48} height={48} layout="fixed" />
         </div>
       <h2 className="mt-3.5 mb-3 text-center">
         <Link to="/" className="text-red-900 hover:text-red-900 no-underline">
           {siteTitle}
-        </Link>  
+        </Link>
       </h2>
-      <p className="flex space-x-2 items-center justify-center text-sm text-black"><span className="border border-black rounded p-0.5">渔</span> <span className="border border-black rounded p-0.5">樵</span> <span className="border border-black rounded p-0.5">耕</span> <span className="border border-black rounded p-0.5">读</span></p>
+      <p className="flex space-x-1 items-center justify-center text-sm text-black"><span className="border border-black rounded p-0.5">渔</span> <span className="border border-black rounded p-0.5">樵</span> <span className="border border-black rounded p-0.5">耕</span> <span className="border border-black rounded p-0.5">读</span></p>
    </div>
       <nav className="m-auto">
       <ul className="flex flex-col flex-1 m-2 space-y-2">
