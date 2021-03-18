@@ -16,7 +16,7 @@ const Header = ({ siteTitle, menuLinks }) => (
           {siteTitle}
         </Link>
       </h2>
-      <p className="flex space-x-1 items-center justify-center text-sm text-black"><span className="border border-black rounded p-0.5">渔</span> <span className="border border-black rounded p-0.5">樵</span> <span className="border border-black rounded p-0.5">耕</span> <span className="border border-black rounded p-0.5">读</span></p>
+      <p className="flex space-x-1 items-center justify-center text-sm text-black"><span className="border border-black rounded-sm p-0.5">渔</span> <span className="border border-black rounded-sm p-0.5">樵</span> <span className="border border-black rounded-sm p-0.5">耕</span> <span className="border border-black rounded-sm p-0.5">读</span></p>
    </div>
       <nav className="m-auto">
       <ul className="flex flex-col flex-1 m-2 space-y-2">
