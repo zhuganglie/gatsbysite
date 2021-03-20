@@ -1,12 +1,12 @@
 import * as React from "react"
-import { graphql } from 'gatsby';
+import {graphql } from 'gatsby';
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {FiDownload} from "react-icons/fi"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-
 const TalksPage = ({data}) => {
+
     return (
 <Layout>
 <SEO title="Talks" keywords={[`talks`,`presentation`, `slides`]} />
@@ -22,7 +22,7 @@ const TalksPage = ({data}) => {
             <div className="mb-2">
               {talk.node.description}
             </div>
-            <a href={talk.node.url} target="_blank" className="flex items-center">
+            <a href={talk.node.url} className="flex items-center">
               <FiDownload size="22" /><span className="ml-2">下载 PDF</span>
             </a>
           </div>
@@ -32,27 +32,27 @@ const TalksPage = ({data}) => {
 )};
 
 export const talksQuery = graphql`
-  query {
-    allTalksJson(sort: { order: DESC, fields: [date] }) {
-      edges {
-        node {
-          id
-          title
-          date
-          description
-          url
-          thumbnailImage {
-            childImageSharp {
-                gatsbyImageData(
-         width: 300
-         placeholder: BLURRED
-       )
-            }
+query {
+  allTalksJson(sort: { order: DESC, fields: [date] }) {
+    edges {
+      node {
+        id
+        title
+        date
+        description
+        url
+        thumbnailImage {
+          childImageSharp {
+              gatsbyImageData(
+       width: 300
+       placeholder: BLURRED
+     )
           }
         }
       }
     }
   }
-`;
+}
+`
 
 export default TalksPage
