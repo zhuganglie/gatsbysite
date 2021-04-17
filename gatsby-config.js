@@ -1,7 +1,11 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.yqgd.tk`,
+<<<<<<< HEAD
     title: `一阳指`,
+=======
+    title: `一 灯`,
+>>>>>>> bf402a1bd2b6f0b1b1431d84ec8bd4b4c2401f87
     description: `渔樵耕读`,
     menuLinks:[
        {

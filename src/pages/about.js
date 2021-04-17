@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="about" />
     <h2>关 于</h2>
     <hr />
     <h4>嗨，你好！欢迎来到我的小站。 </h4>
