@@ -1,9 +1,10 @@
 import * as React from "react"
-import {graphql } from 'gatsby';
+import {graphql, withPrefix} from 'gatsby';
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {FiDownload} from "react-icons/fi"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import PDF from "../public/facilitation.pdf"
 
 const TalksPage = ({data}) => {
 
@@ -22,7 +23,7 @@ const TalksPage = ({data}) => {
             <div className="mb-2">
               {talk.node.description}
             </div>
-            <a href={talk.node.url} className="flex items-center">
+            <a href={PDF} className="flex items-center" rel="noreferrer" target="_blank">
               <FiDownload size="22" /><span className="ml-2">下载 PDF</span>
             </a>
           </div>
