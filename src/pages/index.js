@@ -7,15 +7,17 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <div className="w-full mb-4 mx-auto">
     <StaticImage
       src="../images/lanke.webp"
+      layout="fullWidth"
       width={1200}
       quality={95}
       formats={["AUTO", "WEBP", "AVIF"]}
       alt="王质遇仙"
-      className="w-full mb-4"
     />
-    <div className="text-center">
+    </div>
+    <div className="text-center m-auto">
     <h3>渔樵耕读四首</h3>
     <p>[明] &middot; 任环</p>
     <div className="md:flex  justify-center items-center md:space-x-4">
