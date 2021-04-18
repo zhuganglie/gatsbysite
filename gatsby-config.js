@@ -1,3 +1,5 @@
+const { FaFilePdf } = require("react-icons/fa");
+
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.yqgd.tk`,
@@ -91,4 +93,5 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
+  
 }

@@ -1,10 +1,9 @@
 import * as React from "react"
-import {graphql, withPrefix} from 'gatsby';
+import {graphql} from 'gatsby';
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {FiDownload} from "react-icons/fi"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PDF from "../public/facilitation.pdf"
 
 const TalksPage = ({data}) => {
 
@@ -14,16 +13,16 @@ const TalksPage = ({data}) => {
 <h2>演 讲</h2>
 <hr />
       {data.allTalksJson.edges.map(talk => (
-        <div key={talk.node.id} className="md:flex md:space-x-8 md:items-center md:justify-center">
+        <div key={talk.node.id} className="md:flex md:space-x-12 md:items-center md:justify-start">
           <div className="w-full md:w-1/2 lg:w-1/3">
           <GatsbyImage image={getImage(talk.node.thumbnailImage)} width={600} alt="演讲" />
           </div>
-          <div className="w-full md:w-1/2 lg:w-1/3 md:my-4">
+          <div className="w-full md:w-1/2 lg:w-2/3 md:my-4">
             <h4>{talk.node.title}</h4>
             <div className="mb-2">
               {talk.node.description}
             </div>
-            <a href={PDF} className="flex items-center" rel="noreferrer" target="_blank">
+            <a href={talk.node.pdf} className="flex items-center" rel="noreferrer" target="_blank">
               <FiDownload size="22" /><span className="ml-2">下载 PDF</span>
             </a>
           </div>
@@ -41,7 +40,7 @@ query {
         title
         date
         description
-        url
+        pdf
         thumbnailImage {
           childImageSharp {
               gatsbyImageData(
