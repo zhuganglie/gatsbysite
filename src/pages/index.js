@@ -2,11 +2,11 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <Seo title="Home" />
     <div className="w-full mb-4 mx-auto">
     <StaticImage
       src="../images/lanke.webp"

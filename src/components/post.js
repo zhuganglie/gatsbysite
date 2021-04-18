@@ -34,10 +34,10 @@ export default function PageTemplate({ data: { mdx } }) {
         </div>
         <div className="bg-yellow-100 w-max px-2 py-1">
         <Link to="/posts">
-        <a className="flex items-center space-x-2">
+        <button className="flex items-center space-x-2">
         <BiArrowBack size="18" />
         <span>返回</span>
-        </a>
+        </button>
         </Link>
         </div>
         </div>

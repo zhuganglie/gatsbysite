@@ -2,11 +2,11 @@ import * as React from "react"
 import {StaticImage} from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="about" />
+    <Seo title="about" />
     <h2>关 于</h2>
     <hr />
     <h4>嗨，你好！欢迎来到我的小站。 </h4>
@@ -25,7 +25,7 @@ const AboutPage = () => (
 
     <p>我兴趣广泛，喜欢远足，喜欢骑脚踏车，喜欢听古典音乐，喜欢品茶，喜欢做美食......。我最大的嗜好是下围棋。从大学一年级开始一直下到现在。围棋让我明白了不少道理。譬如，舍弃是围棋取胜的秘诀；舍得是人生成功的智慧。有舍才有得，会舍才会得。舍得之道，乾坤奥妙。</p>
 
-    <p>最近, 我对网站开发产生了浓厚的兴趣，于是就开始了 HTML、CSS 和 Javascript 的学习之旅。你现在正在浏览的这个网站就是这次学习的一个初步成果，它是基于 <a href="https://gatsbyjs.com" target="_blank">Gatsby</a> 和 <a href="https://tailwindcss.com" target="_blank">Tailwindcss</a> 技术构建的。怎么样？看上去还不错吧？<span role="img" aria-label="Smile">&#128522;</span>
+    <p>最近, 我对网站开发产生了浓厚的兴趣，于是就开始了 HTML、CSS 和 Javascript 的学习之旅。你现在正在浏览的这个网站就是这次学习的一个初步成果，它是基于 <a href="https://gatsbyjs.com" target="_blank" rel="noreferrer">Gatsby</a> 和 <a href="https://tailwindcss.com" target="_blank" rel="noreferrer">Tailwindcss</a> 技术构建的。怎么样？看上去还不错吧？<span role="img" aria-label="Smile">&#128522;</span>
     </p>
   </Layout>
 )

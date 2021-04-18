@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { kebabCase } from 'lodash'
 
 import {FiCalendar} from 'react-icons/fi'
@@ -11,7 +11,7 @@ const IndexPage =({data}) => {
  const { edges: posts } = data.allMdx
     return (
      <Layout>
-         <SEO title = "Posts" />
+         <Seo title = "Posts" />
     <div>
       <h2>文 章</h2>
       <hr />

@@ -3,13 +3,13 @@ import {graphql} from 'gatsby';
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {FiDownload} from "react-icons/fi"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const TalksPage = ({data}) => {
 
     return (
 <Layout>
-<SEO title="Talks" keywords={[`talks`,`presentation`, `slides`]} />
+<Seo title="Talks" keywords={[`talks`,`presentation`, `slides`]} />
 <h2>演 讲</h2>
 <hr />
       {data.allTalksJson.edges.map(talk => (
