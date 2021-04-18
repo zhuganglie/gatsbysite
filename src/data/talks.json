@@ -4,7 +4,7 @@
       "date": "2018-08",
       "description":
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum repudiandae, autem eos voluptatum assumenda cum laborum iure nam in accusantium.",
-      "pdf": "../static/facilitation.pdf",
+      "file": "../images/facilitation.pdf",
       "thumbnailImage": "../images/talk.png"
     },
     {
@@ -12,7 +12,7 @@
       "date": "2019-09",
       "description":
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum repudiandae, autem eos voluptatum assumenda cum laborum iure nam in accusantium.",
-      "pdf": "https://www.dropbox.com/s/dl113lr46lrjf1n/support.pdf?dl=0",
+      "file": "../images/facilitation.pdf",
       "thumbnailImage": "../images/talk.png"
     },
     {
@@ -20,7 +20,7 @@
       "date": "2020-09",
       "description":
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum repudiandae, autem eos voluptatum assumenda cum laborum iure nam in accusantium.",
-      "pdf": "https://drive.google.com/file/d/0B16_p1qF6HkjY19NNHlOZVE1UXc/view?usp=sharing",
+      "file": "../images/facilitation.pdf",
       "thumbnailImage": "../images/talk.png"
     }
   ]

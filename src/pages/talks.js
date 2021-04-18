@@ -22,7 +22,7 @@ const TalksPage = ({data}) => {
             <div className="mb-2">
               {talk.node.description}
             </div>
-            <a href={talk.node.pdf} className="flex items-center" rel="noreferrer" target="_blank">
+            <a href={talk.node.file.publicURL} className="flex items-center" rel="noreferrer" target="_blank">
               <FiDownload size="22" /><span className="ml-2">下载 PDF</span>
             </a>
           </div>
@@ -37,18 +37,20 @@ query {
     edges {
       node {
         id
-        title
         date
         description
-        pdf
-        thumbnailImage {
+        title
+        file {
+          publicURL
+        }
+       thumbnailImage {
           childImageSharp {
               gatsbyImageData(
        width: 300
        placeholder: BLURRED
      )
           }
-        }
+        } 
       }
     }
   }
