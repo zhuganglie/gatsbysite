@@ -15,13 +15,13 @@ const IndexPage =({data}) => {
     <div>
       <h2>文 章</h2>
       <hr />
-      <ul className="list-none mt-2">
+      <ul className="list-none mt-2 ml-0">
         {posts.map(({ node: post }) => (
-          <li key={post.id} className="my-6">
+          <li key={post.id} className="my-6 ml-0">
             <div className="flex flex-col space-y-2 md:flex-row md:items-start md:justify-between">
             <div>
             <Link to={post.fields.slug}>
-              <h3>{post.frontmatter.title}</h3>
+              <h4 className="mb-0.5 text-left">{post.frontmatter.title}</h4>
             </Link>
             <div class="mt-2">
             <span className="flex text-sm font-sans space-x-4">
