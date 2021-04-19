@@ -9,7 +9,7 @@ const Header = ({ siteTitle, menuLinks }) => (
     <div className="text-center p-7 flex flex-col  space-y-12 items-baseline justify-center">
       <div>
         <div className="w-1/3 m-auto">
-        <StaticImage src="../images/yideng.png" alt="avatar" width={48} height={48} layout="fixed" />
+        <StaticImage src="../images/avatar.jpeg" alt="avatar" width={48} height={48} layout="fixed" />
         </div>
       
         <Link to="/" className="text-red-900 hover:text-red-900 no-underline">

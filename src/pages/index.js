@@ -11,8 +11,6 @@ const IndexPage = () => (
     <StaticImage
       src="../images/lanke.webp"
       layout="fullWidth"
-      width={1200}
-      quality={95}
       formats={["AUTO", "WEBP", "AVIF"]}
       alt="王质遇仙"
     />
