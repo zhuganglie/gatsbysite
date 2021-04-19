@@ -11,19 +11,19 @@ module.exports = {
          link:'/'
         },
        {
-         name:'关 于',
+         name:'关  于',
          link:'/about'
        },
        {
-         name:'文 章',
+         name:'文  章',
          link: '/posts'
        },
        {
-         name: '演 讲',
+         name: '演  讲',
          link: '/talks'
         },
         {
-          name: '联 系',
+          name: '联  系',
           link: '/contact'
         },
       ],
