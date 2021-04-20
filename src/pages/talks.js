@@ -22,7 +22,7 @@ const TalksPage = ({data}) => {
             <div className="mb-2">
               {talk.node.description}
             </div>
-            <div className="flex items-center space-x-2 min-w-max">
+            <div className="flex items-center justify-start space-x-2 min-w-max">
             <FiDownload size="22" />
             <a href={talk.node.file.publicURL} rel="noreferrer" target="_blank">
              <span>下载 PDF</span>
