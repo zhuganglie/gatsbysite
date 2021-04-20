@@ -12,10 +12,10 @@ const Header = ({ siteTitle, menuLinks }) => (
         <StaticImage src="../images/avatar.jpeg" alt="avatar" width={48} height={48} layout="fixed" />
         </div>
       
-        <Link to="/" className="text-red-900 hover:text-red-900 no-underline">
-        <h2 className="mt-3.5 mb-3 text-center">{siteTitle}</h2>
-        </Link>
-      
+        <h2 className="mt-3.5 mb-3 text-center">
+        <Link to="/" className="text-red-900 hover:text-red-900 hover:bg-yellow-50 no-underline">
+        {siteTitle}</Link>
+        </h2>
       <p className="flex space-x-1 items-center justify-center text-sm text-black"><span className="border border-black rounded-sm p-0.5">渔</span> <span className="border border-black rounded-sm p-0.5">樵</span> <span className="border border-black rounded-sm p-0.5">耕</span> <span className="border border-black rounded-sm p-0.5">读</span></p>
    </div>
       <nav className="m-auto">
@@ -33,10 +33,10 @@ const Header = ({ siteTitle, menuLinks }) => (
           &copy; {new Date().getFullYear()}
           {` `}
           <span>猪刚烈</span>
-          <div className="flex items-center justify-center space-x-1 mt-2">
-          <a href="https://twitter.com/zhugangliet" aria-label="twitter"><FaTwitterSquare aria-label="twitter" size={20} color="#7f1d1d" /></a>
-  <a href="https://github.com/zhuganglie" aria-label="github"><FaGithubSquare aria-label="github" size={20} color="#7f1d1d" /></a>
-  <a href="mailto:pyrrhonianpig@gmail.com" aria-label="email"><FaEnvelopeSquare aria-label="email" size={20} color="#7f1d1d" /></a>
+          <div className="flex items-center justify-center mt-2">
+          <a href="https://twitter.com/zhugangliet" aria-label="twitter" className="hover:bg-yellow:50"><FaTwitterSquare aria-label="twitter" size={20} color="#7f1d1d" /></a>
+  <a href="https://github.com/zhuganglie" aria-label="github" className="hover:bg-yellow-50"><FaGithubSquare aria-label="github" size={20} color="#7f1d1d" /></a>
+  <a href="mailto:pyrrhonianpig@gmail.com" aria-label="email" className="hover:bg-yellow-50"><FaEnvelopeSquare aria-label="email" size={20} color="#7f1d1d" /></a>
 </div>
         </footer>
     </div>

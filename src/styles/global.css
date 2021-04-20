@@ -13,7 +13,7 @@
    @apply box-border border-0 outline-none;
   }
   a {
-  @apply bg-transparent text-red-900 inline-block text-center;
+  @apply bg-transparent text-red-900 inline-block text-center px-1;
   }
   a:hover,
   a:focus,

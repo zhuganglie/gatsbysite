@@ -33,12 +33,9 @@ export default function PageTemplate({ data: { mdx } }) {
          {mdx.frontmatter.tags.map(tag => (<Link to={`/tags/${kebabCase(tag)}/`} className="flex text-red-900 px-1"><AiOutlineTag size="18" color="#7F1D1D" />{tag}</Link>))}
         </div>
         <div className="bg-yellow-100 w-max px-2 py-1">
-        <Link to="/posts">
-        <button className="flex items-center space-x-2">
-        <BiArrowBack size="18" />
-        <span>返回</span>
-        </button>
-        </Link>
+        
+        <Link to="/posts" className="flex item-center space-x-2 w-min-max"><BiArrowBack size="18" /> <span>返回</span></Link>
+
         </div>
         </div>
         <DiscussionEmbed {...disqusConfig} />
