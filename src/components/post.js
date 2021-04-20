@@ -28,13 +28,13 @@ export default function PageTemplate({ data: { mdx } }) {
       </MDXProvider>
     </div>
     <div className="mb-4 text-sm md:flex md:justify-between md:items-center">
-    <div className="bg-yellow-100  w-max px-2 py-1 md:mb-3 flex items-center space-x-2 ">
+    <div className="w-max px-2 py-1 md:mb-3 flex items-center space-x-2 ">
         <span className="font-bold"><Link to="/tags">标签：</Link></span>
-         {mdx.frontmatter.tags.map(tag => (<Link to={`/tags/${kebabCase(tag)}/`} className="flex text-red-900 px-1"><AiOutlineTag size="18" color="#7F1D1D" />{tag}</Link>))}
+         {mdx.frontmatter.tags.map(tag => (<Link to={`/tags/${kebabCase(tag)}/`} className="flex text-red-900 bg-yellow-100 mx-1"><AiOutlineTag size="18" color="#7F1D1D" />{tag}</Link>))}
         </div>
         <div className="bg-yellow-100 w-max px-2 py-1">
         
-        <Link to="/posts" className="flex item-center space-x-2 w-min-max"><BiArrowBack size="18" /> <span>返回</span></Link>
+        <Link to="/posts" className="flex item-center space-x-2 min-w-max"><BiArrowBack size="18" /> <span>返回</span></Link>
 
         </div>
         </div>
