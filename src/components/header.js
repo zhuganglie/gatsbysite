@@ -34,7 +34,7 @@ const Header = ({ siteTitle, menuLinks }) => (
           {` `}
           <span>猪刚烈</span>
           <div className="flex items-center justify-center mt-2">
-          <a href="https://twitter.com/zhugangliet" aria-label="twitter" className="hover:bg-yellow:50"><FaTwitterSquare aria-label="twitter" size={20} color="#7f1d1d" /></a>
+          <a href="https://twitter.com/zhugangliet" aria-label="twitter" className="hover:bg-yellow-50"><FaTwitterSquare aria-label="twitter" size={20} color="#7f1d1d" /></a>
   <a href="https://github.com/zhuganglie" aria-label="github" className="hover:bg-yellow-50"><FaGithubSquare aria-label="github" size={20} color="#7f1d1d" /></a>
   <a href="mailto:pyrrhonianpig@gmail.com" aria-label="email" className="hover:bg-yellow-50"><FaEnvelopeSquare aria-label="email" size={20} color="#7f1d1d" /></a>
 </div>
