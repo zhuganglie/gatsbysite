@@ -9,7 +9,7 @@ const ContactPage = () => (
       <h2>联 系</h2>
       <hr />
 <p>随便写几行联系一下呗。</p>
-<form method="post" action="https://formspree.io/pyrrhonianpig@gmail.com">
+<form method="post" action="https://formspree.io/f/mnqljpjp">
 <div className="flex flex-col mb-4">
     <label htmlFor="name" className="mb-2 uppercase text-sm text-grey-darkest" > 姓 名 </label>
     <input className="border focus:border-red-500 py-2 px-3 text-grey-darkest" type="text" name="name" id="name" />
