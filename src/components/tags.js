@@ -8,7 +8,7 @@ const Tags = ({ pageContext, data }) => {
   const { edges, totalCount } = data.allMdx
   //for English
   //const tagHeader = `${totalCount} post${totalCount === 1 ? "" : "s"} taged with "${tag}`
-  const tagHeader = `共有 ${totalCount} 篇文章标有“${tag}”`
+  const tagHeader = `“${tag}标签下共有${totalCount} 篇文章”`
 
   return (
     <Layout>
