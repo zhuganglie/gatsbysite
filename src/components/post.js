@@ -15,7 +15,7 @@ export default function PageTemplate({ data: { mdx } }) {
   const disqusConfig = {
     shortname: `zhuganglie`,
     config: {
-      url: siteMetadata.siteUrl + mdx.id,
+      url: siteMetadata.siteUrl + mdx.frontmatter.title,
       identifier: mdx.id,
       title: mdx.frontmatter.title,
   },
