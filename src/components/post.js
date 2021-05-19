@@ -8,13 +8,19 @@ import { DiscussionEmbed } from "disqus-react"
 import {AiOutlineTag} from "react-icons/ai"
 import {FiCalendar} from "react-icons/fi"
 import {BiArrowBack} from "react-icons/bi"
+import { siteMetadata } from "../../gatsby-config"
 const shortcodes = { Link } // Provide common components here
 
 export default function PageTemplate({ data: { mdx } }) {
   const disqusConfig = {
     shortname: `zhuganglie`,
-    config: { identifier: `{mdx.id}`, title: `{mdx.frontmatter.title}`, },
-  }
+    config: {
+      url: siteMetadata.siteUrl + mdx.id,
+      identifier: mdx.id,
+      title: mdx.frontmatter.title,
+  },
+}
+
   return (
     <Layout>
     <div>
