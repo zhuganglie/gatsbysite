@@ -1,4 +1,4 @@
-const { FaFilePdf } = require("react-icons/fa");
+//const { FaFilePdf } = require("react-icons/fa");
 
 module.exports = {
   siteMetadata: {
